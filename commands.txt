@@ -119,5 +119,15 @@ git clone https://github.com/... [nome-clone]
 Effettua un clone di una repository (locale o remota) sulla cartella corrente
 [nome-clone] è opzionale
 
+========== #09 ==========
 
+Per collaborare ad un progetto (Github)
+Fork -> Clone localmente -> Effettuare le modifiche, commit, push -> Pull request
+
+Per accettare una modifica da un collaboratore (Github)
+Pull requests -> Possibile comunicare con il collaboratore -> Merge pull request
+Sincronizzare le modifiche con git pull
+
+Per non accettare una modifica da un collaboratore (Github)
+Pull requests -> ... -> Close pull request
 
