@@ -113,6 +113,11 @@ Per importare i file digitare git merge [origin]/[master]
 git pull
 Sincronizza le informazioni dal server remoto ed effettua il merge
 
+========== #08 ==========
+
+git clone https://github.com/... [nome-clone]
+Effettua un clone di una repository (locale o remota) sulla cartella corrente
+[nome-clone] è opzionale
 
 
 
