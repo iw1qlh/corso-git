@@ -1,0 +1,81 @@
+
+[WORKING DIRECTORY] --- [STAGING AREA (index)] --- [HISTORY (repository)]
+               +--- git add --->      +--- git commit --->
+  <--- git restore --staged ---+
+
+file .gitignore
+#Directory (commento)
+temp (directory)
+#Files (directory)
+password.txt
+*.log
+!debug.log (eccezione, scrivere dopo la regola)
+Per escluedere file o cartelle dalla gestione di GIT (file con password, cartelle di log, ...)
+
+git init
+Inizializza la cartella corrente (crea directory .git dove verrà memorizzato tutto lo storico)
+Per ripartire cancella la cartella .git
+
+git status
+Visualizza lo stato del sistema (branch attivo, file non tracciati, ...)
+
+git add file.txt
+Aggiornare lo stato di un file nella Staging area
+Utilizzare git add . per aggiungere tutti i file di una cartella
+
+git commit -m "First commit"
+Committa le modifiche
+
+git commit -am "First commit"
+Esegue git add e git commit
+
+git restore --staged file.txt
+Rimuove un file dalla Staging Area (contrario di git add)
+
+git log
+git log --oneline
+git log --oneline --reverse
+Mostra lista delle commit
+
+git commit --amend
+Modifica dell'ultimo commit
+
+git reset [opzione] [id-commit]
+git reset [opzione] HEAD^
+git reset [opzione] HEAD~1
+Annulla una commit
+--soft Porta lo stato prima del commit
+--mixed (default) Porta lo stato prima di "git add"
+--hard Ripristina lo stato della working directory (riportando i file della working al commit richiesto, eventuali file aggiunti vengono cancellati)
+
+alias graph='git log --all --decorate --oneline --graph'
+Crea il comando graph (alias)
+
+git branch [nome]
+Crea un branch. Senza digitare [nome] viene visualizzato l'elenco dei branch
+
+git checkout [nome]
+Crea un nuovo branch
+
+git diff master..[nome-branch]
+Visualizza le differenze tra 2 branch
+
+git merge [nome-branch]
+Porta le modifiche del branch [nome-branch] dentro al branch corrente
+Visualizza eventuali conflitti. Per confermare occorre fare un commit, si può annullare con --abort
+Dopo è possibile eliminare il branch
+
+git merge --abort
+Annulla il merge eseguito
+
+git branch --merged
+Visualizza i branch che sono stati uniti
+
+git branch -d [nome-branch]
+Elimina branch che è già stato merged
+
+git branch -D [nome-branch]
+Elimina branch che non è ancora stato merged
+
+
+
