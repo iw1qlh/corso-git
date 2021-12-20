@@ -77,5 +77,14 @@ Elimina branch che è già stato merged
 git branch -D [nome-branch]
 Elimina branch che non è ancora stato merged
 
+========== #05 ==========
+
+git remote add [origin] https://github.com/...
+Inserisce un server remoto dove memorizzare i file, si chiamerà [origin]
+
+git push -u [origin] [master]
+git push
+Upload dei file verso il server remoto [origin] del branch [master]
+Con -u imposta i parametri di default
 
 
