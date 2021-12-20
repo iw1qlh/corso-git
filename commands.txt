@@ -3,6 +3,7 @@
                +--- git add --->      +--- git commit --->
   <--- git restore --staged ---+
 
+
 file .gitignore
 #Directory (commento)
 temp (directory)
@@ -14,6 +15,8 @@ Per escluedere file o cartelle dalla gestione di GIT (file con password, cartell
 
 file .git/config
 Configurazione (server remoti, branch, ...)
+
+========== #01 ==========
 
 git init
 Inizializza la cartella corrente (crea directory .git dove verrà memorizzato tutto lo storico)
@@ -31,6 +34,8 @@ Committa le modifiche
 
 git commit -am "First commit"
 Esegue git add e git commit
+
+========== #02 ==========
 
 git restore --staged file.txt
 Rimuove un file dalla Staging Area (contrario di git add)
@@ -50,6 +55,8 @@ Annulla una commit
 --soft Porta lo stato prima del commit
 --mixed (default) Porta lo stato prima di "git add"
 --hard Ripristina lo stato della working directory (riportando i file della working al commit richiesto, eventuali file aggiunti vengono cancellati)
+
+========== #04 ==========
 
 alias graph='git log --all --decorate --oneline --graph'
 Crea il comando graph (alias)
