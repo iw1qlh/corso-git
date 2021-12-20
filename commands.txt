@@ -104,4 +104,15 @@ Rinomina un server remoto
 git remote remove [origin]
 Eliminare un server remoto
 
+========== #07 ==========
+
+git fetch
+Sincronizza le informazioni dalla repository remota
+Per importare i file digitare git merge [origin]/[master]
+
+git pull
+Sincronizza le informazioni dal server remoto ed effettua il merge
+
+
+
 
