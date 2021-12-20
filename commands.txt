@@ -12,6 +12,9 @@ password.txt
 !debug.log (eccezione, scrivere dopo la regola)
 Per escluedere file o cartelle dalla gestione di GIT (file con password, cartelle di log, ...)
 
+file .git/config
+Configurazione (server remoti, branch, ...)
+
 git init
 Inizializza la cartella corrente (crea directory .git dove verrà memorizzato tutto lo storico)
 Per ripartire cancella la cartella .git
@@ -82,9 +85,23 @@ Elimina branch che non è ancora stato merged
 git remote add [origin] https://github.com/...
 Inserisce un server remoto dove memorizzare i file, si chiamerà [origin]
 
+git remote -v
+Visualizza la lista dei server remoti (completi di url)
+
 git push -u [origin] [master]
 git push
 Upload dei file verso il server remoto [origin] del branch [master]
 Con -u imposta i parametri di default
+
+========== #06 ==========
+
+git remote show [origin]
+Visualizza le informazioni del server [origin]
+
+git remote rename [origin] [new-name]
+Rinomina un server remoto
+
+git remote remove [origin]
+Eliminare un server remoto
 
 
