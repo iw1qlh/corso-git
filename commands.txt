@@ -131,3 +131,23 @@ Sincronizzare le modifiche con git pull
 Per non accettare una modifica da un collaboratore (Github)
 Pull requests -> ... -> Close pull request
 
+========== #10 ==========
+
+In caso di Fork, per mantenere la sincronizzazione con la repository originale:
+1) aggiungere un repository remoto
+git remote add [upstream] https://github.com/repository-originale
+2) sincronizzare
+git fetch [upstream]
+git merge [upstream]/[master]
+oppure utilizzare direttamente
+git pull [upstream] [master]
+3) sincronizzare la repository forked
+git push
+
+Si può fare da Github
+Fetch upstream
+
+
+
+
+
