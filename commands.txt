@@ -3,6 +3,7 @@
                +--- git add --->      +--- git commit --->
   <--- git restore --staged ---+
 
+========== === ==========
 
 file .gitignore
 #Directory (commento)
@@ -155,6 +156,9 @@ Si può fare da Github
 Fetch upstream
 
 
+========== VISUAL STUDIO ==========
 
-
-
+Per accorpare commit (sia locali che remoti)
+1) "Git local settings" - abilitare "Enable push --force"
+2) Da "View Branch History" selezionare le commit da accorpare - "Squash Commits ..." - Squash
+3) Push - Force Push
