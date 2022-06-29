@@ -20,7 +20,7 @@ Configurazione (server remoti, branch, ...)
 ========== #01 ==========
 
 git init
-Inizializza la cartella corrente (crea directory .git dove verr‡ memorizzato tutto lo storico)
+Inizializza la cartella corrente (crea directory .git dove verr√† memorizzato tutto lo storico)
 Per ripartire cancella la cartella .git
 
 git status
@@ -73,8 +73,8 @@ Visualizza le differenze tra 2 branch
 
 git merge [nome-branch]
 Porta le modifiche del branch [nome-branch] dentro al branch corrente
-Visualizza eventuali conflitti. Per confermare occorre fare un commit, si puÚ annullare con --abort
-Dopo Ë possibile eliminare il branch
+Visualizza eventuali conflitti. Per confermare occorre fare un commit, si pu√≤ annullare con --abort
+Dopo √® possibile eliminare il branch
 
 git merge --abort
 Annulla il merge eseguito
@@ -83,15 +83,15 @@ git branch --merged
 Visualizza i branch che sono stati uniti
 
 git branch -d [nome-branch]
-Elimina branch che Ë gi‡ stato merged
+Elimina branch che √® gi√† stato merged
 
 git branch -D [nome-branch]
-Elimina branch che non Ë ancora stato merged
+Elimina branch che non √® ancora stato merged
 
 ========== #05 ==========
 
 git remote add [origin] https://github.com/...
-Inserisce un server remoto dove memorizzare i file, si chiamer‡ [origin]
+Inserisce un server remoto dove memorizzare i file, si chiamer√† [origin]
 
 git remote -v
 Visualizza la lista dei server remoti (completi di url)
@@ -125,7 +125,7 @@ Sincronizza le informazioni dal server remoto ed effettua il merge
 
 git clone https://github.com/... [nome-clone]
 Effettua un clone di una repository (locale o remota) sulla cartella corrente
-[nome-clone] Ë opzionale
+[nome-clone] √® opzionale
 
 ========== #09 ==========
 
@@ -152,7 +152,7 @@ git pull [upstream] [master]
 3) sincronizzare la repository forked
 git push
 
-Si puÚ fare da Github
+Si pu√≤ fare da Github
 Fetch upstream
 
 
@@ -162,3 +162,7 @@ Per accorpare commit (sia locali che remoti)
 1) "Git local settings" - abilitare "Enable push --force"
 2) Da "View Branch History" selezionare le commit da accorpare - "Squash Commits ..." - Squash
 3) Push - Force Push
+
+Per allineare modifiche fatte su master sul branch develop
+1) Checkout su develop
+2) Su master: Merge 'master' into 'develop'
